@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/icons/fontello.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="img_fondo">
+            <img src="/img/bgPasos.jpg.png" alt="">
+        </div>
+    </header>
+    <main>
+        <nav class="contenido">
+
+            <div class="logos">
+                <div>
+                    <img src="/img/logo academias nacionales.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="/img/logo cecytes.png" alt="">
+                </div>
+            </div>
+            <section class="step-wizard">
+                <ul class="step-wizard-list">
+                    <li class="step-wizard-item">
+                        <span class="progress-count">1</span>
+                        <span class="progress-label">select <i class="icon-user"></i></span>
+                    </li>
+                    <li class="step-wizard-item ">
+                        <span class="progress-count">2</span>
+                        <span class="progress-label">Registro <i class="icon-user"></i></span>
+                    </li>
+                    <li class="step-wizard-item ">
+                        <span class="progress-count">3</span>
+                        <span class="progress-label">Checkout <i class="icon-qrcode"></i></span>
+                    </li>
+                    
+                </ul>
+            </section>
+            <div class="cont">
+                 
+                <div class="textos">
+                    <h1>Registro Finalizado.</h1><br>   
+                    <p>Copia esta clave y compartela con los alumnos que acompañarás:</p>
+                    <h2><%= asesorId %></h2>
+                    <br>  
+                    <p>Descarga el código QR el cual
+                    presentarás al momento de asistir
+                    al evento.
+                    </p>
+                        <br>
+                   
+                    <br>
+                    <div>
+                        <a href="/generarQr/asesor/<%= asesorId %>"><button class="custom custom-descargar">DESCARGAR CODIGO</button></a>
+                    </div>
+                </div>
+              
+               
+                <div class="imagen">
+                    <img src="/img/pngqr.png" alt="">
+                </div>
+            </div>
+            
+            </nav>
+    </main>
+    <footer>
+
+        <div>
+            <p>© todos los derechos reservados</p>
+            <a href="https://storyset.com/work">Work illustrations by Storyset</a><br>
+            <a href="https://storyset.com/education">Education illustrations by Storyset</a>
+        </div>
+        
+        <div>
+            <p>Festival academico </p> 
+            <p>CECyTEs</p>
+            <a href="https://storyset.com/technology">Technology illustrations by Storyset</a>
+        </div>
+
+    </footer>
+</body>
+</html>

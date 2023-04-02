@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="img_fondo">
+            <img src="img/bgPasos.jpg.png" alt="">
+        </div>
+    </header>
+
+    <nav class="contenido">
+        <div class="logos">
+            <div>
+                <img src="img/logo academias nacionales.jpeg" alt="">
+            </div>
+            <div>
+                <img src="img/logo cecytes.png" alt="">
+            </div>
+        <section class="step-wizard">
+            <ul class="step-wizard-list">
+                <li class="step-wizard-item">
+                    <span class="progress-count">1</span>
+                    <span class="progress-label">Select<i class="icon-user"></i></span>
+                </li>
+                <li class="step-wizard-item current-item">
+                    <span class="progress-count">2</span>
+                    <span class="progress-label">Registro <i class="icon-user"></i></span>
+                </li>
+                <li class="step-wizard-item ">
+                    <span class="progress-count">3</span>
+                    <span class="progress-label">Checkout <i class="icon-qrcode"></i></span>
+                </li>
+                
+            </ul>
+        </section>
+
+        <br>
+        <div class="titulo">
+            <h1>Registro de datos / Alumno</h1>
+        </div>
+        <hr>
+        <form action="/registrar-alumno" method="post" class="contenedor">
+
+            <!--------------------------------Curp y estados --------------------------------------------------->
+
+            <fieldset class="">
+                <div class="flex2"> 
+                <div>
+                    <label for="curp">CURP:<span>*</span></label>
+                    <input id="curp" type="text" name="curp">
+                </div>
+                <div>
+                <label for="estados">Estado:<span>*</span></label>
+                    <select name="estado" id="estados">
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </div>
+            </div>
+            </fieldset>
+            <br>
+             <!-----------------------------------Nombre y apellidos------------------------------------------------>
+             <fieldset>
+                <label for="nombre">Nombre completo: <span>*</span></label>
+                    <div class="flex">
+                       
+                        <input id="nombre" type="text" name= "nombre" placeholder="Nombre(s)" required>
+                   
+                        <input id="primer_apellido" type="text" name="primerApellido" placeholder="Primer apellido" required>
+                   
+                        <input id="segundo_apellido" type="text" name="segundoApellido" placeholder="Segundo Apellido" required> 
+                     
+                    </div>  
+                </fieldset>
+                <br>
+            <!-----------------------------------correo y telefono------------------------------------------------>
+            <fieldset>
+                <div class="flex2">
+                    <div>
+                    <label>Correo electrónico*</label>
+                    <input type="text" name="correo" required><br>
+                </div>
+                <div>
+                    <label>Numero teléfonico*</label>
+                    <input type="text" name="telefono" required><br>
+                </div>  
+                </div>
+            </fieldset><br>
+           
+
+
+            <!-----------------------------------datos asesor------------------------------------------------>
+            <fieldset >
+
+                <div class="flex2">
+                    <div>
+                        <label>Clave del asesor(a) acompañante*</label>
+                        <input type="text" name="claveAsesor"><br>
+                    </div>
+                    <div>
+                        <label>Nombre del profesor(a) que preparó al alumno *</label>
+                        <input type="text" name="maestroTutor"><br>
+                    </div>
+                </div>
+
+            </fieldset><br>
+            <!-----------------------------------Nivel y materia------------------------------------------------>
+            <fieldset >
+
+                <div class="flex2">
+                    <div>
+                        <label>Nivel a participar *</label>
+                        <select name="nivel">
+                            <option value="Nivel I">Nivel I</option>
+                            <option value="Nivel II">Nivel II</option>    
+                            <option value="Nivel III">Nivel III</option>
+                        </select><br>  
+                    </div>
+                    <div>
+                        <label>Area del componente *</label>
+                        <select name="areaComponente">
+                            <option value="MATEMATICAS">MATEMATICAS</option>
+                            <option value="COMUNICACIÓN">COMUNICACIÓN</option>    
+                            <option value="CIENCIAS SOCIALES">CIENCIAS SOCIALES</option>
+                            <option value="CIENCIAS EXPERIMENTALES">CIENCIAS EXPERIMENTALES</option>
+                            <option value="HUMANIDADES">HUMANIDADES</option>
+                        </select><br>
+                    </div>
+                </div>
+
+            </fieldset><br>
+
+            <!-----------------------------------foto y boton------------------------------------------------>
+            <div class="file">
+                    <br>
+                    <h2>Adjuntar fotografia.</h2>
+                    <p>Toma una fotografía de ti a tamaño infantil y carga el archivo.</p>
+                    <br>
+                    <input class="file" type="file">
+                    <br><br><hr>
+            </div>        
+            <br>
+                    <div class="boton">
+                       <button class="custom-button subirRegistro" type="submit">COMPLETAR REGISTRO</button>
+                    </div>
+                       <br><br>
+        </form>
+    </nav>
+
+    <footer>
+        <div>
+            <p>© todos los derechos reservados</p>
+            <a href="https://storyset.com/work">Work illustrations by Storyset</a><br>
+            <a href="https://storyset.com/education">Education illustrations by Storyset</a>
+        </div>
+        
+        <div>
+            <p>Festival académico</p> 
+            <p>CECyTEs</p>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#ebeaeb;
+    
+}
+
+fieldset {
+    border: none;
+}
+/*/////////////////////Imagen de fondo///////////////////////*/
+.img_fondo{
+    width: 1000vh;
+    max-width:100%;
+    min-width: 320px;
+    margin: auto;
+}
+.img_fondo img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:right top;
+    
+}
+/*//////////////////////logos///////////////////////////////////*/
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.logos img{
+    width:100px;
+}
+/*//////////////////////Fondo Blanco////////////////////////*/
+.contenido{
+    background-color: white;
+    border-radius:10px;
+    padding: 20px;
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+    top: -250px;
+    display: grid;
+    justify-content: center;
+   
+    
+}
+/*//////////////////////////////COntenido de la pagina/////////////*/
+/*******credencial digital*/
+.conte{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    margin-bottom:50px;
+    margin-top: 50px;
+}
+.d-flex{
+    display: flex;
+}
+.g-1{
+    gap: 1rem;
+}
+
+.datos_participante{
+    display: flex;
+    gap:4.5em;
+}
+.fotoestudiante img{
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#name{
+    color: #f15d5f;
+}
+.conte h3{
+    color: #6d6d6c;
+}
+.conte p{
+    color: #6d6d6c;
+    font-weight:300;
+}
+
+/**Responsive credencial digital*/
+@media(max-width:768px){
+	.contenido{
+		width:95%;
+        
+	}
+    .img_fondo img {
+        object-fit:contain;
+    object-position:top;
+    height:320px;
+    }
+    .datos_participante{
+        display: flex;
+        flex-direction: column;
+        gap: none;
+        text-align: center;
+    }
+    .gap  {
+        display: none;
+    }
+    .d-flex{
+        display: block;
+        text-align: center;
+    }
+}
+/*************************************************Pagina de codigo descargado*************************************/
+.cont{
+    margin: 100px 0px 0px 60px;
+    display: flex;
+    position: relative;
+    top: -10px;
+     
+ }
+ 
+.textos h1{
+    font-size: 40px;
+    font-weight:400;
+}
+.textos p{
+    width:350px;
+    font-weight:300;
+    font-size:24px;
+    color: #828282;
+}
+.custom{
+    padding:20px 40px;
+    border: 0;
+    width: 320px;
+    border-radius: 10px;
+    background-color: rgba(241, 93, 95, 1);
+    box-shadow: rgba(0, 0,0, 0.1);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.custom-descargar{
+    text-decoration: none;
+    color: #fff;
+}
+
+.custom-descargar:hover {
+    background-color:rgba(255, 103, 55, 1);
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
+/**************************** png ilustrativa de codigo qr*/
+.cont img{
+    margin:60px;
+}
+.imagen img{
+    width:350px;    
+}
+/********RESPONSIVE PAGINA FINAL*/
+@media(max-width:768px){
+	.contenido{
+		width:95%;
+	}
+  
+    .textos h1{
+        font-size: 36px;
+    }
+    .cont{
+        display: block; 
+        margin:10px;
+        top:30px;
+        margin-bottom: 50px;
+        
+    }
+    .cont img{
+        margin: 0;
+        width:300px;
+    }
+
+}
+/***********************************************Formularios*****************************************/
+.contenedor {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    padding-top: 15px;
+    font-size:15px;
+}
+input, select {
+    width: 100%;
+    border-radius: 5px;
+    margin: 1px 0 15px 0;
+}
+.nom{
+    width: auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.flex2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+select{
+    border-radius: 5px;
+   padding: 5px;
+}
+@media (min-width: 768px) {
+    .flex {
+        flex-wrap: nowrap;
+    }
+}
+.titulo h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 20px;
+}
+.flex input{
+    background-color:rgba(228, 228, 228, 1);
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    height:30px;
+}
+.flex2 input{
+    background-color:rgba(228, 228, 228, 1);
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height:25px;
+}
+.custom-button{
+    padding:10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(241, 93, 95, 1);
+    box-shadow: rgba(0, 0,0, 0.1);
+    cursor: pointer;
+}
+
+.subirRegistro {
+    color: #fff;
+}
+
+.subirRegistro:hover {
+    background-color:rgba(255, 103, 55, 1);
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
+.file input{
+    display: flex;
+    justify-content:center;
+   padding: 10px;
+    border-radius: 0;
+}
+/* .form1{
+    gap:8em;
+    display:flex;
+    margin-right: 100px;
+}
+
+.form2{
+display: block;
+}
+.form2 label{
+    font-size:15px;
+} */
+
+/* .file{
+    padding:0px;
+    
+}
+.file input{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
+
+.form2 input{
+    background-color:rgba(228, 228, 228, 1);
+    border: 0px;
+    border-radius: 5px;
+    height:20px;
+    
+} */
+
+
+/***responsive formularios*/
+@media(max-width:768px){
+	.contenido{
+		width:95%;
+        
+	}
+    .img_fondo img {
+        object-fit:contain;
+    object-position:top;
+    height:320px;
+    }
+    .form1{
+        display:block;
+      margin: 10px;
+    }
+    .form2 input{
+        width:300px;
+        
+    }
+    .titulo h1{
+        text-align: center;
+    }
+    .file{
+        margin: 10px;
+    }
+    .custom-button{
+        margin: 10px;
+    }
+}
+@media(max-width:600px){
+    .form1{
+        display:block;
+      margin: 20px;
+    }
+
+    .titulo h1{
+        margin: 20px;
+    }
+    .file{
+        margin: 20px;
+    }
+    .custom-button{
+        margin: 20px;
+    }
+}
+/*//////////////////////////////Footer/////////////////////*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #d8d8d9;
+    width:100%;
+}
+footer a{
+    color: #595959;
+}
+
+
+
+/*****************************************barra progresiva************/
+.step-wizard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
+}
+.step-wizard-list{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.step-wizard-item{
+    padding: 0 20px;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive:1;
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+}
+.step-wizard-item + .step-wizard-item:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19px;
+    background:rgba(255, 103, 55, 1);
+    width: 100%;
+    height: 2px;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+.progress-count{
+    height: 40px;
+    width:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 auto;
+    position: relative;
+    z-index:10;
+    color: transparent;
+}
+.progress-count:after{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background:rgba(255, 103, 55, 1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -10;
+}
+.progress-count:before{
+    content: "";
+    height: 10px;
+    width: 20px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%) rotate(-45deg);
+    transform-origin: center center;
+}
+.progress-label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: flex;
+}
+.current-item .progress-count:before,
+.current-item ~ .step-wizard-item .progress-count:before{
+    display: none;
+}
+.current-item ~ .step-wizard-item .progress-count:after{
+    height:10px;
+    width:10px;
+}
+.current-item ~ .step-wizard-item .progress-label{
+    opacity: 0.5;
+}
+.current-item .progress-count:after{
+    background: #fff;
+    border: 2px solid rgba(255, 103, 55, 1);
+}
+.current-item .progress-count{
+    color: rgba(255, 103, 55, 1);
+}
+
+@media(max-width:768px){
+    .step-wizard-item{
+        min-width:00px;
+        
+    }
+}
